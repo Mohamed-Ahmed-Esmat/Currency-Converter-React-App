@@ -3,22 +3,9 @@ import backgroundImage from '../../assets/background.jpg';
 import LandingBox from './LandingBox';
 
 function Home() {
-  const styles = {
-    homeBackground: {
-      backgroundImage: `url(${backgroundImage})`,
-      backgroundSize: 'cover',
-      backgroundRepeat: 'no-repeat',
-      backgroundPosition: 'center',
-      height: '100vh',  /* Full height of the viewport */
-      width: '100vw',   /* Full width of the viewport */
-      display: 'flex',  /* Center the LandingBox */
-      justifyContent: 'center',
-      alignItems: 'center',
-    },
-  };
-
   return (
-    <div style={styles.homeBackground}>
+    <div className="bg-center bg-cover h-screen w-screen flex items-center justify-center" 
+         style={{ backgroundImage: `url(${backgroundImage})` }}>
       <LandingBox />
     </div>
   );

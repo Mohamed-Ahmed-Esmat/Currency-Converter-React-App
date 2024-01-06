@@ -5,12 +5,17 @@ import { useState } from 'react';
 import Btn from './components/Home Page/Btn';
 import Home from './components/Home Page/Home';
 import Footer from './components/Footer';
+import CurrencyMain from './components/Currency Page/CurrencyMain';
+import { Route, Routes } from 'react-router';
 
 
 function App() {
   return (
     <div className="App">
-      <Home />
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/currency" element={<CurrencyMain />} />
+    </Routes>
       <Footer />
     </div>
   );

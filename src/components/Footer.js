@@ -1,30 +1,11 @@
-// Footer.jsx
-
 import React from 'react';
 
 const Footer = () => {
-  const styles = {
-    container: {
-      backgroundColor: '#222',
-      color: '#fff',
-      padding: '20px',
-      textAlign: 'center',
-    },
-    text: {
-      fontSize: '1.2em',
-    },
-    link: {
-      color: '#E4C732',
-      textDecoration: 'none',
-      fontWeight: 'bold',
-    },
-  };
-
   return (
-    <footer style={styles.container}>
-      <p style={styles.text}>
+    <footer className="bg-gray-900 text-white p-5 text-center">
+      <p className="text-lg">
         © 2024 ConCurrency. All rights reserved. | Designed by{' '}
-        <a href="" target="_blank" rel="noopener noreferrer" style={styles.link}>
+        <a href="" target="_blank" rel="noopener noreferrer" className="text-yellow-400 no-underline font-bold">
           Mohamed Esmat
         </a>
       </p>
